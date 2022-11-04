@@ -1,0 +1,425 @@
+<html>
+<body bgcolor="#000000">
+
+
+<div class="titulo1"
+
+<p> How I Feel </p>
+
+</div>
+
+
+<div class="b1">
+<input type="button" value=" HOLAAA!" onclick="button()" id="btn" style="height:80px; width:80px; background-color: rgb(144, 151, 239);">
+<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: rgb(167, 49, 121);" >
+<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: rgb(74, 216, 61);" >
+<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: rgb(255, 0, 0);" >
+
+</div>
+<div class="l2">
+
+  <p id="love1"></p>
+  
+  <div class="bonita">
+  
+    <div id="tevezbien"></div>
+  
+  </div>
+  
+</div>
+<div class="l1">
+
+  <div id="cuten1"></div>
+</div>
+
+</div>
+
+</html>
+
+<script type="text/javascript">
+var love1 = "¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ "
+var fotovaca = document.createElement("img");
+var heart1 = document.createElement("img");
+var cuten1 = "¡Hola Andy!, como estas?, espero que bien, te escribí esto para que sepas que eres de las cosas que más importancia me andado ósea noma ve te hice una página para demostrarte mi amor por ti, pero bueno... sí sé que soy muy payaso y que me vuelvo muy molesto a veces, pero ando intentando cambiar como soy, intento hablar más despacio y que se me entienda en general, sí sé que parece que no. ¡Pero créeme Lo Estoy Intentando!"
+fotovaca.src ="C:/Users/carlo/Downloads/ANimage2.jpg";
+heart1.src = "C:/Users/carlo/OneDrive/Imágenes/emojicorazonA.jpg";
+var tevezbien = "si te vez bien en la foto mi andy no se ponga de que no se ve bonita jsjsjs"
+var texto0= document.querySelector('.l1');
+var texto6= document.querySelector('.l2'); 
+var img= document.querySelector('.l2'); 
+
+fotovaca.height = 500;
+fotovaca.width = 350;
+
+heart1.height= 500;
+heart1.width = 750
+
+
+function button(){
+
+  document.getElementById('love1').innerHTML= love1 ;
+  document.body.appendChild(fotovaca);
+  tevezbien1()
+  texto0.classList.add('esconder')
+  texto6.classList.remove('esconder')
+
+fotovaca.height = 500;
+fotovaca.width = 350;
+
+heart1.height= 0;
+heart1.width = 0;
+
+}
+
+function cutenote(){
+  document.getElementById('cuten1').innerHTML= cuten1;
+  document.body.appendChild(heart1);
+  texto6.classList.add('esconder')
+  texto6.classList.add('esconder')
+  texto0.classList.remove('esconder')
+
+fotovaca.height = 0;
+fotovaca.width = 0;
+
+heart1.height= 500;
+heart1.width = 750
+}
+
+
+
+
+function tevezbien1(){
+document.getElementById('tevezbien').innerHTML= tevezbien;
+}
+
+
+
+
+
+
+
+</script>
+
+<style>
+    .titulo1 {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.bonita{
+  color: aliceblue;
+}
+
+.titulo1{
+    font-size: 100px;
+    color: rgb(140, 140, 249);
+}
+
+.b1{
+  animation-duration: 5s;
+  animation-name: goin;
+
+ 
+
+display:grid;
+ grid-template-rows: 75px 75px 75px 75px;
+ gap: 15px
+}
+
+.l1{
+ 
+ font-size: 50px;
+ color: aliceblue;
+ margin-top: 50px;
+}
+.l2 p{
+ 
+ font-size: 50px;
+ color: aliceblue;
+ margin-top: 50px;
+}
+
+.texto1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.texto2{
+    font-size: 50px;
+    color: aliceblue;
+    margin-bottom: 3cm;
+}
+/*Use this class when you want your content to be hidden*/
+
+
+
+
+.esconder{
+  visibility: hidden;
+}
+.esconder p{
+  visibility: hidden;
+}
+
+</style>
+
+
+
+
+
+<!--
+ESTA PARTE ES POR UN ARREGLO!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<html>
+<body bgcolor="#000000">
+
+
+<div class="titulo1"
+
+<p> BUENOS DIAAAS MI ANDY! </p>
+
+</div>
+
+
+<div class="b1">
+<input type="button" value=" HOLAAA!" onclick="openPopup()" id="btn" style="height:80px; width:80px; background-color: rgb(144, 151, 239);">
+<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: rgb(167, 49, 121);" >
+<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: rgb(74, 216, 61);" >
+<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: rgb(255, 0, 0);" >
+
+</div>
+
+<div class="l1">
+  <div id="love1"></div>
+  <div id="cuten1"></div>
+</div>
+
+<div class="popup" id="popup">
+
+  <img src="C:\Users\carlo\Downloads\8-82063_heart-png-pink-cartoon-love-hearts.png">
+
+  <p>¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ </p>
+ 
+
+
+  
+
+  <div id="love1"></div>
+
+  <button type="button" onclick="closePopup()">OK</button>
+
+</div>
+
+
+
+</html>
+
+<script type="text/javascript">
+var love1 = "¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ "
+var fotovaca = document.createElement("img");
+var heart1 = document.createElement("img");
+var cuten1 = "¡Hola Andy!, como estas?, espero que bien, te escribí esto para que sepas que eres de las cosas que más importancia me andado ósea noma ve te hice una página para demostrarte mi amor por ti, pero bueno... sí sé que soy muy payaso y que me vuelvo muy molesto a veces, pero ando intentando cambiar como soy, intento hablar más despacio y que se me entienda en general, sí sé que parece que no. ¡Pero créeme Lo Estoy Intentando!"
+fotovaca.src ="C:/Users/carlo/Downloads/ANimage2.jpg";
+heart1.src = "C:/Users/carlo/OneDrive/Imágenes/emojicorazonA.jpg";
+
+
+fotovaca.height = 500;
+fotovaca.width = 350;
+
+heart1.height= 500;
+heart1.width = 750
+
+function tiempo(){
+  button()
+
+
+
+}
+function button(){
+  setTimeout(button, 5000);
+  document.getElementById('love1').innerHTML= love1 ;
+  document.body.appendChild(fotovaca);
+}
+
+function cutenote(){
+  document.getElementById('cuten1').innerHTML= cuten1;
+  document.body.appendChild(heart1);
+}
+
+
+
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+
+popup.classlist.add("open-popup")
+
+
+}
+
+
+
+function closePopup(){
+
+popup.classlist.remove("open-popup")
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<style>
+    .titulo1 {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.titulo1{
+    font-size: 100px;
+    color: rgb(140, 140, 249);
+}
+
+.b1{
+  animation-duration: 5s;
+  animation-name: goin;
+
+ 
+
+display:grid;
+ grid-template-rows: 75px 75px 75px 75px;
+ gap: 15px
+}
+
+.l1{
+ 
+  font-size: 50px;
+  color: aliceblue;
+  margin-top: 50px;
+}
+
+.texto1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.texto2{
+    font-size: 50px;
+    color: aliceblue;
+    margin-bottom: 3cm;
+}
+/*Use this class when you want your content to be hidden*/
+
+
+
+
+
+
+.open-popup{
+
+  visibility: visible;
+  top: 50%;
+   
+  transform: translate(-50%,-50%)scale(1);
+}
+
+
+
+
+.popup{
+  width: 400px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%
+  text-align: center;
+  transform: translate(-50%,-50%) scale(0.1);
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0, 0, 0.2);
+
+}
+.popup button{
+  width: 100%;
+  margin-top: 50px
+  padding: 10px 0;
+  background: #6fd649
+  color: #fff;
+  border:0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px
+  cursor:pointer;
+  box-shadow: 0 5px 5px rgb(0, 0, 0.2);
+
+   
+}
+
+
+</style>-->
