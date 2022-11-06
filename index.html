@@ -1,6 +1,6 @@
 <html>
-<body bgcolor="#000000">
-
+<body bgcolor="#161F6D">
+</body>
 
 <div class="titulo1"
 
@@ -10,49 +10,110 @@
 
 
 <div class="b1">
-<input type="button" value=" HOLAAA!" onclick="button()" id="btn" style="height:80px; width:80px; background-color: rgb(144, 151, 239);">
-<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: rgb(167, 49, 121);" >
-<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: rgb(74, 216, 61);" >
-<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: rgb(255, 0, 0);" >
+<input type="button" value=" HOLAAA!" onclick="button()" id="btn" style="height:80px; width:80px; background-color:  #9c27b0;">
+<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: #9C27B0;" >
+<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: #9C27B0;" >
+<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: #9C27B0;" >
 
 </div>
+
+
 <div class="l2">
 
-  <p id="love1"></p>
+  <p id="love1"></p><!--
   
-  <div class="bonita">
-  
-    <div id="tevezbien"></div>
+--><div class="bonita"><!--
+  --> <div id="tevezbien"></div>
   
   </div>
   
-</div>
-<div class="l1">
 
-  <div id="cuten1"></div>
-</div>
 
 </div>
+<div class="l1"><!--
+--><div id="cuten1"></div>
+</div>
+
+
+
+
+
+</div>
+<!-- 
+<button onclick="playVideo()" type="button">Play</button>
+<button onclick="pauseVideo()" type="button">Pause</button><br> 
+<video id="myVid" width="400" height="200">
+ <source src="C:\Users\carlo\Downloads\videoplayback.mp4" type="video/mp4">
+</video>
+ <div id="myVid"></div>
+<div id="test"></div>-->
+
+
+<div class="vaca">
+  <img src ="https://github.com/Wiearlos/prototipe.github.io/blob/main/ANimage2.jpg?raw=true" width="300">
+</div>
+
+
+<div class="corazon">
+<img src = "https://github.com/Wiearlos/prototipe.github.io/blob/main/emojicorazon.jpg?raw=true" width="750">
+</div>
+
 
 </html>
 
+
+
 <script type="text/javascript">
+
 var love1 = "¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ "
-var fotovaca = document.createElement("img");
-var heart1 = document.createElement("img");
+
+
+var fotovaca = document.createElement("vaca");
+
+
+var heart1 = document.createElement("corazon");
+
+
 var cuten1 = "¡Hola Andy!, como estas?, espero que bien, te escribí esto para que sepas que eres de las cosas que más importancia me andado ósea noma ve te hice una página para demostrarte mi amor por ti, pero bueno... sí sé que soy muy payaso y que me vuelvo muy molesto a veces, pero ando intentando cambiar como soy, intento hablar más despacio y que se me entienda en general, sí sé que parece que no. ¡Pero créeme Lo Estoy Intentando!"
-fotovaca.src ="https://github.com/Wiearlos/prototipe.github.io/blob/main/ANimage2.jpg?raw=true";
-heart1.src = "https://github.com/Wiearlos/prototipe.github.io/blob/main/emojicorazon.jpg?raw=true";
+
+
 var tevezbien = "si te vez bien en la foto mi andy no se ponga de que no se ve bonita jsjsjs"
+
+
 var texto0= document.querySelector('.l1');
+
+
 var texto6= document.querySelector('.l2'); 
+
+
 var img= document.querySelector('.l2'); 
 
-fotovaca.height = 500;
-fotovaca.width = 350;
 
-heart1.height= 500;
-heart1.width = 750
+var l5= document.querySelector('.vaca'); 
+
+
+var l6= document.querySelector('.corazon')
+
+
+
+
+
+
+var myVideo = document.getElementById("myVid");
+
+
+
+
+//fotovaca.height = 500;
+//fotovaca.width = 350;
+
+//heart1.height= 500;
+//heart1.width = 750
+
+
+
+
+
 
 
 function button(){
@@ -63,13 +124,24 @@ function button(){
   texto0.classList.add('esconder')
   texto6.classList.remove('esconder')
 
-fotovaca.height = 500;
-fotovaca.width = 350;
 
-heart1.height= 0;
-heart1.width = 0;
+  l5.classList.add('scala')
+  l6.classList.remove('scala')
+
+//fotovaca.height = 500;
+//fotovaca.width = 350;
+
+//heart1.height= 0;
+//heart1.width = 0;
 
 }
+
+
+
+
+
+
+
 
 function cutenote(){
   document.getElementById('cuten1').innerHTML= cuten1;
@@ -77,15 +149,19 @@ function cutenote(){
   texto6.classList.add('esconder')
   texto6.classList.add('esconder')
   texto0.classList.remove('esconder')
+  l6.classList.add('scala')
+  l5.classList.remove('scala')
 
-fotovaca.height = 0;
-fotovaca.width = 0;
 
-heart1.height= 500;
-heart1.width = 750
+  
+
+
+//fotovaca.height = 0;
+//fotovaca.width = 0;
+
+//heart1.height= 500;
+//heart1.width = 750
 }
-
-
 
 
 function tevezbien1(){
@@ -94,32 +170,57 @@ document.getElementById('tevezbien').innerHTML= tevezbien;
 
 
 
+function playVideo() { 
+ myVideo.play(); 
+} 
+function pauseVideo() { 
+ myVideo.pause(); 
+} 
+
+
 
 
 
 
 </script>
 
+
+
+
+
+
+
 <style>
-    .titulo1 {
-  animation-duration: 1.5s;
-  animation-name: slidein;
+
+
+
+
+.vaca{
+  
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  scale:0;
+
+  height: 49%;
+  width: 14%;
+  border: 5px solid#6d74b5;
+
+
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+.corazon{
+display: grid;
+place-items: center;
+visibility: hidden;
+scale:0;
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
+
 
 .bonita{
   color: aliceblue;
+  background-color: #6d74b5;
 }
 
 .titulo1{
@@ -128,27 +229,26 @@ document.getElementById('tevezbien').innerHTML= tevezbien;
 }
 
 .b1{
-  animation-duration: 5s;
-  animation-name: goin;
-
- 
-
 display:grid;
- grid-template-rows: 75px 75px 75px 75px;
- gap: 15px
+ grid-template-columns: 75px 75px 75px 75px;
+ gap: 15px;
 }
 
 .l1{
  
  font-size: 50px;
  color: aliceblue;
- margin-top: 50px;
+ background-color:  #6d74b5;
 }
 .l2 p{
  
  font-size: 50px;
  color: aliceblue;
- margin-top: 50px;
+ background-color:  #6d74b5;
+
+
+
+
 }
 
 .texto1{
@@ -158,18 +258,28 @@ display:grid;
 .texto2{
     font-size: 50px;
     color: aliceblue;
-    margin-bottom: 3cm;
+
 }
-/*Use this class when you want your content to be hidden*/
+/*Use this part when you want your content to be hidden*/
 
 
 
 
 .esconder{
   visibility: hidden;
+  scale:0;
 }
 .esconder p{
   visibility: hidden;
+ scale:0;
+}
+
+
+.scala{
+  visibility: visible;
+  scale:1;
+  
+
 }
 
 </style>
