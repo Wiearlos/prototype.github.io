@@ -10,20 +10,22 @@
 
 
 <div class="b1">
-<input type="button" value=" HOLAAA!" onclick="button()" id="btn" style="height:80px; width:80px; background-color:  #9c27b0;">
-<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: #9C27B0;" >
-<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: #9C27B0;" >
-<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: #9C27B0;" >
+
+<button class="glow-on-hover" type="button" onclick="button()">Hola!</button>
+<button class="glow-on-hover" type="button" onclick="cutenote()">Note A</button>
+<button class="glow-on-hover" type="button" onclick="">Note B</button>
+<button class="glow-on-hover" type="button" onclick="">Note C</button>
 
 </div>
 
 
 <div class="l2">
 
-  <p id="love1"></p><!--
+  <p id="love1"></p>
+  <br>
   
---><div class="bonita"><!--
-  --> <div id="tevezbien"></div>
+<div class="bonita">
+  <div id="tevezbien"></div>
   
   </div>
   
@@ -50,7 +52,7 @@
 
 
 <div class="vaca">
-  <img src ="https://github.com/Wiearlos/prototipe.github.io/blob/main/ANimage2.jpg?raw=true" width="300">
+  <img src ="https://github.com/Wiearlos/prototipe.github.io/blob/main/ANimage2.jpg?raw=true" width="300" >
 </div>
 
 
@@ -197,16 +199,15 @@ function pauseVideo() {
 
 .vaca{
   
-  display: grid;
-  place-items: center;
+  
   visibility: hidden;
   scale:0;
 
-  height: 49%;
-  width: 14%;
-  border: 5px solid#6d74b5;
+  height: auto;
+  width: 300px;
+  border: 15px solid#6d74b5;
 
-
+box-shadow: #6d74b5;
 }
 
 .corazon{
@@ -214,13 +215,22 @@ display: grid;
 place-items: center;
 visibility: hidden;
 scale:0;
+border: 15px solid#6d74b5;
+height: auto;
+width: 750px;
+
+
+display: inline-block;
 
 }
 
 
 .bonita{
   color: aliceblue;
-  background-color: #6d74b5;
+  
+  display: inline-block;
+  width: 450px;
+
 }
 
 .titulo1{
@@ -228,26 +238,33 @@ scale:0;
     color: rgb(140, 140, 249);
 }
 
-.b1{
-display:grid;
- grid-template-columns: 75px 75px 75px 75px;
- gap: 15px;
+
+
+
+
+
+.b1 :hover{
+  background: #e1e1e1;
+    border-top: 10px solid #000000;
 }
+
 
 .l1{
  
- font-size: 50px;
+ font-size: 25px;
  color: aliceblue;
- background-color:  #6d74b5;
+ 
+ display: inline-block;
+ width: 1250px;
+ height: 0px;
 }
 .l2 p{
  
  font-size: 50px;
  color: aliceblue;
- background-color:  #6d74b5;
 
-
-
+ display: inline-block;
+ width: 1250px;
 
 }
 
@@ -260,6 +277,10 @@ display:grid;
     color: aliceblue;
 
 }
+
+
+
+
 /*Use this part when you want your content to be hidden*/
 
 
@@ -281,6 +302,82 @@ display:grid;
   
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button style */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+
+    gap: 16px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 
 </style>
 
@@ -313,7 +410,7 @@ ESTA PARTE ES POR UN ARREGLO!
 
 
 
-<!--
+
 <html>
 <body bgcolor="#000000">
 
