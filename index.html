@@ -19,7 +19,7 @@ Fffdd0
 
 <button class="glow-on-hover" type="button" onclick="button()">Hola!</button>
 <button class="glow-on-hover" type="button" onclick="cutenote()">Note A</button>
-<button class="glow-on-hover" type="button" onclick="">Note B</button>
+<button class="glow-on-hover" type="button" onclick="canchion()">Note B</button>
 <button class="glow-on-hover" type="button" onclick="">Note C</button>
 
 </div>
@@ -47,14 +47,7 @@ Fffdd0
 
 
 </div>
-<!-- 
-<button onclick="playVideo()" type="button">Play</button>
-<button onclick="pauseVideo()" type="button">Pause</button><br> 
-<video id="myVid" width="400" height="200">
- <source src="C:\Users\carlo\Downloads\videoplayback.mp4" type="video/mp4">
-</video>
- <div id="myVid"></div>
-<div id="test"></div>-->
+
 
 
 <div class="vaca">
@@ -68,10 +61,16 @@ Fffdd0
 
 
 <div class="song">
+<iframe 
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/BpMbpqjZjzE"allowfullscreen>
+WIDTH=100% HEIGHT=100%
+src="https://www.youtube.com/embed/BpMbpqjZjzE" 
+title="Confidencia" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
 
-  </iframe>
+</iframe>
 </div>
 
 
@@ -115,7 +114,6 @@ var l6= document.querySelector('.corazon')
 
 
 
-var myVideo = document.getElementById("myVid");
 
 
 
@@ -144,19 +142,25 @@ function button(){
   l5.classList.add('scala')
   l6.classList.remove('scala')
 
-//fotovaca.height = 500;
-//fotovaca.width = 350;
-
-//heart1.height= 0;
-//heart1.width = 0;
-
 }
 
+var lo1= ""
+var s1=document.querySelector(".song")
 
 
+function canchion(){
+  
+  document.body.appendChild(s1)
+  s1.classList.add('scala')
+  texto6.classList.add('esconder')
+  texto6.classList.add('esconder')
+  
+  texto0.classList.add('esconder')
 
 
-
+  l5.classList.remove('scala')
+  l6.classList.remove('scala')
+}
 
 
 function cutenote(){
@@ -183,17 +187,6 @@ function cutenote(){
 function tevezbien1(){
 document.getElementById('tevezbien').innerHTML= tevezbien;
 }
-
-
-
-function playVideo() { 
- myVideo.play(); 
-} 
-function pauseVideo() { 
- myVideo.pause(); 
-} 
-
-
 
 
 
@@ -236,11 +229,16 @@ border: 15px solid#6d74b5;
 height: auto;
 width: 750px;
 
-
-
-
 }
+.song{
 
+
+
+margin-top: -82cm !important;
+
+
+display: none;
+}
 
 .bonita{
   color:rgb(129, 62, 62) ;
