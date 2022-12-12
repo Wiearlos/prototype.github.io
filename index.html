@@ -1,682 +1,89 @@
-
-
+<!DOCTYPE html>
 <html>
-<body bgcolor="	#FDFFF5"></body>
-<!--
-f6ead1
-Fffdd0
--->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-<div class="titulo1"
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-<p> How I Feel ❤️ </p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-</div>
-
-<div class="b1">
-
-  <button class="glow-on-hover" type="button" onclick="button()">Hola!</button>
-  <button class="glow-on-hover" type="button" onclick="cutenote()">Note A</button>
-  <button class="glow-on-hover" type="button" onclick="canchion()">Note B</button>
-  <button class="glow-on-hover" type="button" onclick="feli()">Note C</button>
-
-</div>
-
-<div class="l2">
-
-   <p id="love1"></p>
-  <br>
-<div class="bonita">
-   <div id="tevezbien"></div>
-  
-   </div>
-</div>
-
-<div class="son2">
-    <div id="lo1"></div>
-</div>
-
-
-<div class="l1">
-   <div id="cuten1"></div>
-</div>
-
-<div class="rules">
-  <p>Heey esta es la adivinansa que tanto te asuste de! <br> creo que ya sabes como funciona esto, cada pregunta tiene unos numeritos cada letra de la respuesta es un numero<br> espero que lo logres!<br> LUV U!</p>
-</div>
-<div class="jajaxd">
-  <p>Fav Brand of shoes:  /6 /16 /8 /15 /14 /13 /9 <br> Color favorito: /13 /3 /17 /8 /16  /2   /8 /16 /6 /16  <br> Fav sport: /21 /14 /9 /18 /3 /1 /21 /14 /7 /7 <br> Opuesto a perro: /17 /14 /1 /16 <br> Number 44 of the periodic table: /8 /25 /1 /12 /3 /13 /26 /25 /4 <br> Opuesto de triste: /20 /3 /7 /26 /11 <br> Language class that we both dont do nothing in: /20 /8 /3 /13 /22 /12 <br> Cuál es mi primer apellido:  /5 /26 /3 /21 /3 <br> Comida favorita de las tortugas ninja: /10 /26 /11 /11 /14 <br> Animal de mi segundo apellido:  /24 /14 /22 /14 <br> ¿Qué etapa es a los 9 años?:  /13 /26 /23 /3 /11 <br> Que se celebra cuando alguien cumple 15 años: /27 /25 /26 /13 /22 /3 /14 / 23 /8 /14 <br> Traducion a ingles de xilófono: /19 /2 /7 /16 /10 /12 /16 /13 /3 <br> Forma gerundio del verbo huir: /12 /25 /2 /3 /13 /15 /16</p>
-</div>
-
-
-<div class="vaca">
-    <img src ="https://github.com/Wiearlos/prototipe.github.io/blob/main/ANimage2.jpg?raw=true" width="300" >
-</div>
-
-
-<div class="corazon">
-    <img src = "https://github.com/Wiearlos/prototipe.github.io/blob/main/emojicorazon.jpg?raw=true" width="750">
-</div>
-
-
-<div class="song">
-  <iframe 
-
-    WIDTH=750px HEIGHT=500px
-    src="https://www.youtube.com/embed/BpMbpqjZjzE" 
-    title="Confidencia" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-
-  </iframe>
-</div>
-
-
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
-
-
-
-<script type="text/javascript">
-
-var love1 = "¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ "
-
-
-var fotovaca = document.createElement("vaca");
-
-
-var heart1 = document.createElement("corazon");
-
-
-var cuten1 = "¡Hola Andy!, como estas?, espero que bien, te escribí esto para que sepas que eres de las cosas que más importancia me andado ósea noma ve te hice una página para demostrarte mi amor por ti, pero bueno... sí sé que soy muy payaso y que me vuelvo muy molesto a veces, pero ando intentando cambiar como soy, intento hablar más despacio y que se me entienda en general, sí sé que parece que no. ¡Pero créeme Lo Estoy Intentando!"
-
-
-var tevezbien = "si te vez bien en la foto mi andy no se ponga de que no se ve bonita jsjsjs"
-
-
-var texto0= document.querySelector('.l1');
-
-var texto5= document.querySelector('.son2');
-
-var texto6= document.querySelector('.l2'); 
-
-var img= document.querySelector('.l2'); 
-
-var l5= document.querySelector('.vaca'); 
-
-var l6= document.querySelector('.corazon')
-
-var reglas= document.querySelector('.rules')
-
-var important= document.querySelector('.jajaxd')
-
-var lo1= "Hola esta cancion se llama confidencia de suspendido una cancion que me gusta mucho y quisiera que escuches."
-
-var s1=document.querySelector(".song")
-
-
-
-function button(){
-
-document.getElementById('love1').innerHTML= love1 ;
-document.body.appendChild(fotovaca);
-tevezbien1()
-texto0.classList.add('esconder')
-texto6.classList.remove('esconder')
-texto5.classList.add('esconder')
-
-important.classList.remove('scala')
-l5.classList.add('scala')
-l6.classList.remove('scala')
-s1.classList.remove('scala')
-reglas.classList.remove('scala')
-
-}
-
-
-
-
-function feli(){
-document.body.appendChild(reglas);
-document.body.appendChild(important);
-
-reglas.classList.add('scala')
-important.classList.add('scala')
-texto0.classList.add('esconder')
-texto6.classList.add('esconder')
-texto5.classList.add('esconder')
-
-l5.classList.remove('scala')
-l6.classList.remove('scala')
-s1.classList.remove('scala')
-
-}
-
-
-
-
-function canchion(){
-document.getElementById('lo1').innerHTML= lo1 ;
-document.body.appendChild(s1)
-s1.classList.add('scala')
-texto6.classList.add('esconder')
-texto6.classList.add('esconder')
-
-texto0.classList.add('esconder')
-texto5.classList.remove('esconder')
-l5.classList.remove('scala')
-l6.classList.remove('scala')
-important.classList.remove('scala')
-reglas.classList.remove('scala')
-}
-
-
-function cutenote(){
-document.getElementById('cuten1').innerHTML= cuten1;
-document.body.appendChild(heart1);
-texto6.classList.add('esconder')
-texto6.classList.add('esconder')
-texto0.classList.remove('esconder')
-l6.classList.add('scala')
-l5.classList.remove('scala')
-s1.classList.remove('scala')
-texto5.classList.add('esconder')
-important.classList.remove('scala')
-reglas.classList.remove('scala')
-
-}
-
-
-function tevezbien1(){
-document.getElementById('tevezbien').innerHTML= tevezbien;
-}
-
-
-
-
-</script>
-
-
-
-
-
-
-
-<style>
-.rules{
-  display:none;
- visibility: hidden;
- color:  rgb(129, 62, 62) ;
- font-size: 25px;
-}
-.jajaxd{
- display:none;
- visibility: hidden;
- color:  rgb(129, 62, 62) ;
-}
-.son2{
- display: none;
-  font-size: 50px;
- color: rgb(129, 62, 62) ;
- 
- display: inline-block;
- width: 1250px;
-height: 100px;
- 
- 
-  
-}
- 
- 
-.vaca{ 
-  display: none; 
-   
-  visibility: hidden; 
-  scale:0; 
- 
-  height: auto; 
-  width: 300px; 
-  border: 15px solid#6d74b5; 
- 
-box-shadow: #6d74b5; 
-} 
-
-.corazon{
-display:none;
-display: grid;
-place-items: center;
-visibility: hidden;
-scale:0;
-
-
-border: 15px solid#6d74b5;
-height: 0;
-width: 750px;
-
-}
-.song{
-
-
- display: inline-block;
- height: 0;
-margin-top: -82cm !important;
-
-
-display: none;
-}
-
-.bonita{
-  color:rgb(129, 62, 62) ;
-  
-  display: inline-block;
-  width: 450px;
-
-}
-
-.titulo1{
-    font-size: 100px;
-    color: rgb(240, 81, 81);
-
-    display: inline-block;
-    width: auto;
-    height: 100;
-    font-family: 	Courier New;
-
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-.b1 :hover{
-  background: #e1e1e1;
-    border-top: 10px solid #000000;
-}
-
-
-.l1{
- 
- font-size: 25px;
- color: rgb(129, 62, 62) ;
- 
- display: inline-block;
- width: 1250px;
- 
- margin-bottom: 50px;
-}
-.l2 p{
- 
- font-size: 50px;
- color: rgb(129, 62, 62);
-
- display: inline-block;
- width: 1250px;
-
-}
-
-.texto1{
-    font-size: 50px;
-    color: rgb(129, 62, 62) #978d78;
-}
-.texto2{
-    font-size: 50px;
-    color: rgb(129, 62, 62);
-
-}
-
-
-
-
-/*Use this part when you want your content to be hidden*/
-
-
-
-
-.esconder{
-  visibility: hidden;
-  display:none;
-  scale:0;
-}
-.esconder p{
-  visibility: hidden;
-  display:none;
- scale:0;
-}
-
-
-.scala{
-visibility: visible;
-scale:1; 
-display:contents;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* button style */
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-
-    gap: 16px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-</style>
-
-
-
-
-
-<!--
-ESTA PARTE ES POR UN ARREGLO!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html>
-<body bgcolor="#000000">
-
-
-<div class="titulo1"
-
-<p> BUENOS DIAAAS MI ANDY! </p>
-
-</div>
-
-
-<div class="b1">
-<input type="button" value=" HOLAAA!" onclick="openPopup()" id="btn" style="height:80px; width:80px; background-color: rgb(144, 151, 239);">
-<input type="button" value=" Note A" onclick="cutenote()" style="height:80px; width:80px;background-color: rgb(167, 49, 121);" >
-<input type="button" value=" Note B" onclick="" style="height:80px; width:80px; background-color: rgb(74, 216, 61);" >
-<input type="button" value=" Note C" onclick="" style="height:80px; width:80px;background-color: rgb(255, 0, 0);" >
-
-</div>
-
-<div class="l1">
-  <div id="love1"></div>
-  <div id="cuten1"></div>
-</div>
-
-<div class="popup" id="popup">
-
-  <img src="C:\Users\carlo\Downloads\8-82063_heart-png-pink-cartoon-love-hearts.png">
-
-  <p>¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ </p>
- 
-
-
-  
-
-  <div id="love1"></div>
-
-  <button type="button" onclick="closePopup()">OK</button>
-
-</div>
-
-
-
-</html>
-
-<script type="text/javascript">
-var love1 = "¡¡Feliz diaa Mi amor!!, espero que te la pases super bien! ¡Que sigas siendo la niña más bonita del mundo! Te amo ❤️ "
-var fotovaca = document.createElement("img");
-var heart1 = document.createElement("img");
-var cuten1 = "¡Hola Andy!, como estas?, espero que bien, te escribí esto para que sepas que eres de las cosas que más importancia me andado ósea noma ve te hice una página para demostrarte mi amor por ti, pero bueno... sí sé que soy muy payaso y que me vuelvo muy molesto a veces, pero ando intentando cambiar como soy, intento hablar más despacio y que se me entienda en general, sí sé que parece que no. ¡Pero créeme Lo Estoy Intentando!"
-fotovaca.src ="C:/Users/carlo/Downloads/ANimage2.jpg";
-heart1.src = "C:/Users/carlo/OneDrive/Imágenes/emojicorazonA.jpg";
-
-
-fotovaca.height = 500;
-fotovaca.width = 350;
-
-heart1.height= 500;
-heart1.width = 750
-
-function tiempo(){
-  button()
-
-
-
-}
-function button(){
-  setTimeout(button, 5000);
-  document.getElementById('love1').innerHTML= love1 ;
-  document.body.appendChild(fotovaca);
-}
-
-function cutenote(){
-  document.getElementById('cuten1').innerHTML= cuten1;
-  document.body.appendChild(heart1);
-}
-
-
-
-
-let popup = document.getElementById("popup");
-
-function openPopup(){
-
-popup.classlist.add("open-popup")
-
-
-}
-
-
-
-function closePopup(){
-
-popup.classlist.remove("open-popup")
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
-<style>
-    .titulo1 {
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.titulo1{
-    font-size: 100px;
-    color: rgb(140, 140, 249);
-}
-
-.b1{
-  animation-duration: 5s;
-  animation-name: goin;
-
- 
-
-display:grid;
- grid-template-rows: 75px 75px 75px 75px;
- gap: 15px
-}
-
-.l1{
- 
-  font-size: 50px;
-  color: aliceblue;
-  margin-top: 50px;
-}
-
-.texto1{
-    font-size: 50px;
-    color: aliceblue;
-}
-.texto2{
-    font-size: 50px;
-    color: aliceblue;
-    margin-bottom: 3cm;
-}
-/*Use this class when you want your content to be hidden*/
-
-
-
-
-
-
-.open-popup{
-
-  visibility: visible;
-  top: 50%;
-   
-  transform: translate(-50%,-50%)scale(1);
-}
-
-
-
-
-.popup{
-  width: 400px;
-  background-color: white;
-  border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 50%
-  text-align: center;
-  transform: translate(-50%,-50%) scale(0.1);
-  padding: 0 30px 30px;
-  color: #333;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
-}
-
-.popup img{
-  width: 100px;
-  margin-top: -50px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgb(0, 0, 0.2);
-
-}
-.popup button{
-  width: 100%;
-  margin-top: 50px
-  padding: 10px 0;
-  background: #6fd649
-  color: #fff;
-  border:0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px
-  cursor:pointer;
-  box-shadow: 0 5px 5px rgb(0, 0, 0.2);
-
-   
-}
-
-
-</style>-->
